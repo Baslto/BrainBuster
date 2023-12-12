@@ -8,5 +8,6 @@
 </head>
 <body>
     {{ $slot }}
+    <script src="{{ url('main.js') }}"></script>
 </body>
 </html>

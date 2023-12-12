@@ -18,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [SessionsController::class, 'create']);
 Route::post('/login', [SessionsController::class,  'store']);
+Route::get('/logout', [SessionsController::class, 'destroy']);
 
 Route::get('/register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
+
+Route::get('/game', function() {
+    return view('game');
+});

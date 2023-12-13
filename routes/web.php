@@ -23,6 +23,6 @@ Route::get('/logout', [SessionsController::class, 'destroy']);
 Route::get('/register', [RegisterController::class, 'create']);
 Route::post('register', [RegisterController::class, 'store']);
 
-Route::get('/game', function() {
-    return view('game');
+Route::get('/main-menu', function() {
+    return view('main-menu');
 });

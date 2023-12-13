@@ -23,6 +23,6 @@ class RegisterController extends Controller
         
         auth()->login($user);
         
-        return redirect()->to('/game');
+        return redirect()->to('/main-menu');
     }
 }

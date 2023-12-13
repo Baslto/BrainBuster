@@ -22,7 +22,7 @@ class SessionsController extends Controller
         $credentials = $request->only('name', 'password');
         if(Auth::attempt($credentials)) {
 
-            return redirect()->intended('game');
+            return redirect()->intended('main-menu');
         }
 
         return redirect('/')->withErrors(['message' => 'The provided credentials do not match our records.']);

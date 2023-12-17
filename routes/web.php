@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
 use Illuminate\Support\Facades\Route;
@@ -26,3 +27,8 @@ Route::post('register', [RegisterController::class, 'store']);
 Route::get('/main-menu', function() {
     return view('main-menu');
 });
+
+Route::get('/play', [QuizController::class, 'create']);
+Route::get('/myQuiz', [QuizController::class, 'myQuiz']);
+Route::get('/allQuiz', [QuizController::class, 'allQuiz']);
+Route::get('/createQuiz', [QuizController::class, 'createQuiz']);

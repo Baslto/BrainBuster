@@ -27,7 +27,7 @@
                 </form>
             </div>
             <div class="absolute bottom-6 left-8">
-                <p class="text-xl font-semibold mb-2">Noch kein Konto?</p>
+                <p class="text-xl font-semibold mb-2">Du hast schon ein Konto?</p>
                 <a href="/" class="rounded-md font-semibold bg-red-500 hover:bg-red-600 cursor-pointer py-2 px-8">Login</a>
             </div>
         </div>

@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('question', function (Blueprint $table) {
+        Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('userId')->nullable();
-            $table->foreign('userId')
+            $table->unsignedBigInteger('quiz_id')->nullable();
+            $table->foreign('quiz_id')
                 ->references('id')
-                ->on('users')
+                ->on('quizes')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
             $table->string('question');

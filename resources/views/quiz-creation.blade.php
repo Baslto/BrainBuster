@@ -71,11 +71,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
-
-                        </div>
-                        <div>
-
+                        <div class="flex flex-col gap-y-1 relative border-b border-white">
+                            <div class="question-toggle cursor-pointer absolute top-3 right-2">
+                                <img src="plus-solid.svg" alt="" class="creation-plus">
+                                <img src="minus-solid.svg" alt="" class="hidden creation-minus"> 
+                            </div>
+                            <label for="question1" class="mb-1">Frage 3</label>
+                            <div class="question-container w-full mb-2 hidden gap-y-1">
+                                <input  type="text" name="question3" id="question3" class="rounded text-black pl-1 w-full">
+                                <div class="flex flex-col">
+                                    <label for="q3Answer1">Antwort 1</label>
+                                    <input type="text" name="q3Answer1" id="q3Answer1" class="rounded text-black pl-1 w-full">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="q3Answer2">Antwort 2</label>
+                                    <input type="text" name="q3Answer2" id="q3Answer2" class="rounded text-black pl-1 w-full">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="q3Answer3">Antwort 3</label>
+                                    <input type="text" name="q3Answer3" id="q3Answer3" class="rounded text-black pl-1 w-full">
+                                </div>
+                                <div class="flex flex-col">
+                                    <label for="q3Answer4">Antwort 4</label>
+                                    <input type="text" name="q3Answer4" id="q3Answer4" class="rounded text-black pl-1 w-full">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

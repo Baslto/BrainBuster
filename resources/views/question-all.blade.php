@@ -1,6 +1,6 @@
 <x-layout>
     <div class="w-screen h-screen bg-[url('background-gameshow.png')] bg-cover text-center pt-4 relative">
-        <h1 class="text-4xl font-bold mb-6 text-black">Meine Quizes</h1>
+        <h1 class="text-4xl font-bold mb-6 text-black">Fragen</h1>
         <div class="flex flex-col items-center flex-wrap gap-y-4 w-2/3 mx-auto px-4 text-left">
             @for ($i = 0; $i < count($questions); $i++)
                 <div class="flex items-center bg-slate-600 w-fit rounded-xl text-white font-semibold px-4 py-4 relative">
